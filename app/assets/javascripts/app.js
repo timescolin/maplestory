@@ -1,0 +1,85 @@
+angular
+	.module('app',['ui.router', 'templates'])
+	.config(['$stateProvider', '$urlRouterProvider',
+	function($stateProvider, $urlRouterProvider){
+	$stateProvider
+	.state('home',{
+		url:'/home',
+		templateUrl:'angular/_home.html',
+		controller:'MainCtrl'
+	})
+	.state('start',{
+		url:'/start',
+		templateUrl:'angular/_start.html',
+		controller:'MainCtrl'
+	})
+	.state('funded',{
+		url:'/funded',
+		templateUrl:'angular/_funded.html',
+		controller:'MainCtrl'
+	})
+	.state('keepplaying',{
+		url:'/keepplaying',
+		templateUrl:'angular/_keepplaying.html',
+		controller:'MainCtrl'
+	})
+	.state('suggestion',{
+		url:'/suggestion',
+		templateUrl:'angular/_suggestion.html',
+		controller:'MainCtrl'
+	})
+	.state('happiness',{
+		url:'/happiness',
+		templateUrl:'angular/_happiness.html',
+		controller:'MainCtrl'
+	})
+	.state('helping',{
+		url:'/helping',
+		templateUrl:'angular/_helping.html',
+		controller:'MainCtrl'
+	})
+
+
+	.state('op',{
+		url:'/op',
+		templateUrl:'angular/_op.html',
+		controller:'MainCtrl'
+	})
+
+	.state('ksing',{
+		url:'/ksing',
+		templateUrl:'angular/_ksing.html',
+		controller:'MainCtrl'
+	})
+	.state('sadness',{
+		url:'/sadness',
+		templateUrl:'angular/_sadness.html',
+		controller:'MainCtrl'
+	})
+	.state('suffering',{
+		url:'/suffering',
+		templateUrl:'angular/_suffering.html',
+		controller:'MainCtrl'
+	})
+	.state('jett',{
+		url:'/jett',
+		templateUrl:'angular/_jett.html',
+		controller:'MainCtrl'
+	})
+	.state('mihile',{
+		url:'/mihile',
+		templateUrl:'angular/_mihile.html',
+		controller:'MainCtrl'
+	})
+	.state('unfunded',{
+		url:'/unfunded',
+		templateUrl:'angular/_unfunded.html',
+		controller:'MainCtrl'
+	})
+	.state('nokanna',{
+		url:'/nokanna',
+		templateUrl:'angular/_nokanna.html',
+		controller:'MainCtrl'
+	});
+	$urlRouterProvider.otherwise('home');
+}]);
